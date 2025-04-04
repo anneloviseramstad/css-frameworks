@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="#" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication | Socialsphere</title>
+
+    <link rel="stylesheet" href="../css/input.css" />
+  </head>
+  <body
+    class="bg-gradient-to-r from-[#DC359D] via-[#C87A6A] to-[#DBBA4B] text-white font-semibold px-4 py-2 rounded-full"
+  >
+    <header>
+      <header class="container mx-auto px-4">
+        <nav class="py-4">
+          <div class="max-w.7xl mx-auto flex items-center justify-between">
+            <a href="#" class="text-[#ffffff] font-bold font-poppins text-3xl"
+              >socialsphere</a
+            >
+            <a href="#" class="font-poppins font-semibold">About Us</a>
+          </div>
+        </nav>
+      </header>
+    </header>
+    <main>
+      <div class="flex items-top justify-center p-8 min-h-screen">
+        <div class="w-full max-w-md bg-white shadow-lg p-8 rounded-lg">
+          <h1 class="text-3xl font-bold text-center text-gray-800 font-poppins">
+            Sign Up
+          </h1>
+          <form
+            action="/feed/index.html"
+            method="POST"
+            class="mt-4 py-4"
+            id="registerForm"
+          >
+            <label for="name" class="text-gray-800 font-inter">Name</label>
+            <input
+              class="w-full mt-1 p-3 rounded-lg bg-[#ececec] font-inter font-light"
+              id="name"
+              name="name"
+              placeholder="Enter Name"
+              autocomplete="username"
+              required
+            />
+            <label for="email" class="text-gray-800 font-inter">Email</label>
+            <input
+              class="w-full mt-1 p-3 rounded-lg bg-[#ececec] font-inter font-light"
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              placeholder="Type your email address"
+              required
+            />
+            <label for="password" class="text-gray-800 font-inter mt-4"
+              >Password</label
+            >
+            <input
+              class="w-full mt-1 p-3 rounded-lg bg-[#ececec] font-inter font-light"
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="password"
+              placeholder="Type your password"
+              required
+            />
+            <label for="bio" class="text-gray-800 font-inter">Bio</label>
+            <input
+              class="w-full mt-1 p-3 rounded-lg bg-[#ececec] font-inter font-light"
+              id="bio"
+              name="bio"
+              placeholder="Enter Bio"
+              autocomplete="bio"
+            />
+            <label for="avatar-url" class="text-gray-800 font-inter"
+              >Avatar URL</label
+            >
+            <input
+              class="w-full mt-1 p-3 rounded-lg bg-[#ececec] font-inter font-light"
+              id="avatar-url"
+              name="avatar_url"
+              placeholder="Enter Avatar Url"
+              autocomplete="avatar-url"
+            />
+            <label for="avatar-alt" class="text-gray-800 font-inter"
+              >Avatar ALT</label
+            >
+            <input
+              class="w-full mt-1 p-3 rounded-lg bg-[#ececec] font-inter font-light"
+              id="avatar-alt"
+              name="avatar_alt"
+              placeholder="Enter Avatar Alt text"
+              autocomplete="avatar-alt"
+            />
+            <label for="banner-url" class="text-gray-800 font-inter"
+              >Banner URL</label
+            >
+            <input
+              class="w-full mt-1 p-3 rounded-lg bg-[#ececec] font-inter font-light"
+              id="banner-url"
+              name="banner_url"
+              placeholder="Enter Banner Url"
+              autocomplete="banner-url"
+            />
+            <label for="banner-alt" class="text-gray-800 font-inter"
+              >Banner ALT</label
+            >
+            <input
+              class="w-full mt-1 p-3 rounded-lg bg-[#ececec] font-inter font-light"
+              id="banner-alt"
+              name="banner_alt"
+              placeholder="Enter Banner Alt text"
+              autocomplete="banner-alt"
+            />
+            <label for="venue-manager" class="text-gray-800 font-inter"
+              >Venue Manager</label
+            >
+            <input
+              class="w-full mt-1 p-3 rounded-lg bg-[#ececec] font-inter font-light"
+              id="venue-manager"
+              name="venue_manager"
+              placeholder="Enter Venue Manager"
+              autocomplete="venue-manager"
+            />
+
+            <button
+              class="btn w-full px-4 py-2 mt-4 bg-gradient-to-r from-[#DC359D] via-[#C87A6A] to-[#DBBA4B] rounded-lg text-white font-semibold"
+            >
+              Sign Up
+            </button>
+          </form>
+
+          <p class="text-center mt-4 text-gray-600">
+            Already have an account?
+            <a href="/login/index.html" class="font-bold text-gray-800"
+              >Login</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container mx-auto px-4">
+        <p class="text-center mt-4">
+          &copy; 2023 Socialsphere. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="../js/router.js"></script>
+  </body>
+</html>

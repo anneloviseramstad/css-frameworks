@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="#" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Socialsphere</title>
+
+    <link rel="stylesheet" href="/css/input.css" />
+  </head>
+  <body class="text-black container mx-auto">
+    <header>
+      <div
+        class="flex items-center justify-between max-md:justify-between max-md:px-4"
+      >
+        <div class="font-bold font-poppins text-[#DC359D] text-3xl">
+          <a href="/index.html">socialsphere</a>
+        </div>
+
+        <nav class="navigation relative font-semibold">
+          <input
+            type="checkbox"
+            class="toggle-menu absolute w-[30px] h-full z-[3] cursor-pointer opacity-0 hidden max-md:block"
+          />
+
+          <div
+            class="hamburger relative w-[30px] h-[4px] rounded-[10px] cursor-pointer z-[2] transition-all duration-300 hidden max-md:block before:content-[''] before:absolute before:h-[4px] before:right-0 before:w-[20px] before:top-[-10px] before:bg-[var(--color-text)] before:rounded-[10px] before:transition-all before:duration-300 after:content-[''] after:absolute after:h-[4px] after:right-0 after:w-[25px] after:top-[10px] after:bg-[var(--color-text)] after:rounded-[10px] after:transition-all after:duration-300"
+          ></div>
+
+          <ul
+            class="menu flex gap-4 max-md:flex-col max-md:items-center max-md:justify-start max-md:fixed max-md:top-0 max-md:right-[-400px] max-md:w-[300px] max-md:h-full max-md:pt-[150px] max-md:m-0 max-md:text-center max-md:z-[1] max-md:transition-all"
+          >
+            <li class="login-link w-full">
+              <a
+                href="/index.html"
+                class="max-md:block max-md:px-[30px] max-md:text-[20px] max-md:shadow-inner max-md:shadow-[rgba(255,255,255,0.1)]"
+                >LOG IN</a
+              >
+            </li>
+            <li class="register-link w-full">
+              <a
+                href="/register/index.html"
+                class="max-md:block max-md:px-[30px] max-md:text-[20px] max-md:shadow-inner max-md:shadow-[rgba(255,255,255,0.1)]"
+                >REGISTER</a
+              >
+            </li>
+            <li class="user-greeting w-full" style="display: none">
+              <a
+                href="/account/profile.html"
+                class="max-md:block max-md:px-[30px] max-md:text-[20px] max-md:shadow-inner max-md:shadow-[rgba(255,255,255,0.1)]"
+              >
+                Welcome, <span id="username"></span>
+              </a>
+            </li>
+            <li class="logout-button w-full" style="display: none">
+              <button
+                id="logout-button"
+                class="max-md:block max-md:px-[30px] max-md:text-[20px] max-md:shadow-inner max-md:shadow-[rgba(255,255,255,0.1)]"
+              >
+                Logout
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="flex flex-row gap-2 justify-between">
+        <div class="bg-[#f3f3f3] p-4 rounded-lg">
+          <div class="flex flex-col justify-center gap-4">
+            <div class="flex flex-col items-center">
+              <img
+                src="/images/photo-1518020382113-a7e8fc38eac9.avif"
+                class="w-12 h-12 rounded-full object-cover"
+                alt=""
+              />
+              <h2 class="font-semibold">Jane Smith</h2>
+              <p class="text-gray-600 font-semibold">@jane_smith1</p>
+            </div>
+            <div class="flex flex-row justify-center gap-4 mb-4">
+              <div class="text-center">
+                <h3 class="font-semibold">123</h3>
+                <p class="text-gray-600">Posts</p>
+              </div>
+              <div class="text-center">
+                <h3 class="font-semibold">1234</h3>
+                <p class="text-gray-600">Followers</p>
+              </div>
+              <div class="text-center">
+                <h3 class="font-semibold">321</h3>
+                <p class="text-gray-600">Following</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-60 my-4">
+            <p>I love dogs. Dogs make me happy. Follow for dog pics!</p>
+          </div>
+          <div class="py-4">
+            <ul class="flex flex-col gap-2">
+              <li><a href="#">Feed</a></li>
+              <li><a href="#">Explore</a></li>
+              <li>
+                <button class="text-gray-500 hover:text-gray-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 8a3 3 0 11-6 0 3 3 0 016 0zm4 10a4 4 0 00-4-4H9a4 4 0 00-4 4"
+                    ></path>
+                  </svg>
+                </button>
+                <a href="#">Profile</a>
+              </li>
+              <li><a href="#">About Socialsphere</a></li>
+            </ul>
+            <a href="/index.html">
+              <button class="py-4">Logout</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-[#f3f3f3] p-4 rounded-lg">
+          <div class="layout-box middle-column">
+            <h1>Feed</h1>
+
+            <div
+              class="flex items-center justify-start gap-4 my-8 max-sm:flex-col max-sm:gap-2 max-sm:my-2"
+            >
+              <input
+                type="text"
+                id="searchUsernameInput"
+                placeholder="Find by username..."
+                class="bg-[#ffffff] rounded-full px-4 py-1"
+              />
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by title..."
+                class="bg-[#ffffff] rounded-full px-4 py-1"
+              />
+              <select
+                id="sortByTitle"
+                class="bg-[#ffffff] font-[var(--font-body)] rounded-full px-4 py-1 border-none"
+              >
+                <option value="a-z">A-Z</option>
+                <option value="z-a">Z-A</option>
+              </select>
+              <select
+                id="sortByTag"
+                class="bg-[#ffffff] font-[var(--font-body)] rounded-full px-4 py-1 border-none"
+              >
+                <option value="all">All</option>
+                <option value="hei">hei</option>
+                <option value="testing">testing</option>
+                <option value="test">test</option>
+              </select>
+            </div>
+            <div class="posts-grid" id="postsContainer"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container mx-auto px-4">
+        <p class="text-center mt-4">
+          &copy; 2023 Socialsphere. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/js/router.js"></script>
+  </body>
+</html>
