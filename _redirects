@@ -2,3 +2,5 @@
 /profile/*  /profile/index.html  200
 /register/* /register/index.html 200
 /feed/*     /feed/index.html     200
+
+/*   /index.html   200
