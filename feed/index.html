@@ -8,87 +8,110 @@
 
     <link rel="stylesheet" href="/css/input.css" />
   </head>
-  <body class="text-[#1e1e1e] container mx-auto max-w-screen-xl w-full">
-    <header class="flex flex-row justify-between py-4 align-middle">
+  <body
+    class="text-[#1e1e1e] container mx-auto px-4 sm:px-6 md:px-8 max-w-screen-xl w-full"
+  >
+    <header class="flex flex-row justify-between py-1 md:py-4 items-center">
       <a
-        href="/index.html"
-        class="font-bold font-poppins text-[#DC359D] text-3xl"
+        href="#"
+        class="font-bold font-poppins text-[#DC359D] text-2xl sm:text-3xl"
         >socialsphere</a
       >
-      <div class="flex flex-row gap-1">
+      <div class="md:flex-row md:gap-1 hidden md:flex">
         <p class="font-semibold">Welcome, Jane Smith</p>
         <img
-          src="/images/photo-1518020382113-a7e8fc38eac9.avif"
+          src="/images/follow7.avif"
           class="w-6 h-6 rounded-full object-cover"
           alt=""
         />
       </div>
+      <div class="flex flex-row gap-4 md:hidden">
+        <a href="#">
+          <button class="py-4"><i class="fa-solid fa-user"></i></button>
+        </a>
+        <a href="/index.html">
+          <button class="py-4">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </button>
+        </a>
+      </div>
     </header>
 
     <main>
-      <div class="flex w-full gap-2">
-        <div class="bg-[#f3f3f3] p-4 rounded-lg w-1/4">
-          <div class="flex flex-col justify-center gap-4">
+      <div class="flex w-full gap-2 flex-col md:flex-row">
+        <div class="bg-[#f3f3f3] p-4 rounded-lg md:w-1/3 lg:1/4">
+          <div
+            class="flex justify-around items-center md:flex-col md:justify-center gap-2 sm:gap-4"
+          >
             <div class="flex flex-col items-center">
-              <img
-                src="/images/photo-1518020382113-a7e8fc38eac9.avif"
-                class="w-12 h-12 rounded-full object-cover"
-                alt=""
-              />
-              <h2 class="font-semibold">Jane Smith</h2>
-              <p class="text-gray-400 font-regular">@jane_smith1</p>
+              <a href="/profile/index.html" class="flex flex-col items-center">
+                <img
+                  src="/images/follow7.avif"
+                  class="w-12 h-12 rounded-full object-cover"
+                  alt=""
+                />
+                <h2 class="font-semibold text-gray-800">Jane Smith</h2>
+                <p class="text-gray-400 font-regular">@jane_smith1</p>
+              </a>
             </div>
             <div class="flex flex-row justify-center gap-4 mb-4">
               <div class="text-center">
-                <h3 class="font-semibold">123</h3>
-                <p class="text-gray-400">Posts</p>
+                <h3 class="font-semibold font-inter text-sm">123</h3>
+                <p class="text-gray-400 text-sm">Posts</p>
               </div>
               <div class="text-center">
-                <h3 class="font-semibold">1234</h3>
-                <p class="text-gray-400">Followers</p>
+                <h3 class="font-semibold font-inter text-sm">1234</h3>
+                <p class="text-gray-400 text-sm">Followers</p>
               </div>
               <div class="text-center">
-                <h3 class="font-semibold">321</h3>
-                <p class="text-gray-400">Following</p>
+                <h3 class="font-semibold font-inter text-sm">321</h3>
+                <p class="text-gray-400 text-sm">Following</p>
               </div>
             </div>
           </div>
-          <div class="w-60 my-4">
-            <p>I love dogs. Dogs make me happy. Follow for dog pics ✨</p>
+          <div class="my-4 hidden md:block">
+            <p class="text-sm text-gray-800">
+              Just a human obsessed with dogs. Capturing their goofy grins, soft
+              snoots, and pure-hearted chaos. These pups make my world brighter
+              🐾
+            </p>
           </div>
-          <div class="py-4">
-            <ul class="flex flex-col gap-2">
+          <div class="py-4 hidden md:block">
+            <ul class="flex flex-col gap-2 text-sm">
               <li>
                 <i class="fa-solid fa-house"></i
-                ><a href="#" class="px-1">Feed</a>
+                ><a href="#" class="px-1 text-gray-800">Feed</a>
               </li>
               <li>
-                <i class="fa-solid fa-magnifying-glass"></i
-                ><a href="#" class="px-1">Explore</a>
+                <i
+                  class="fa-solid fa-magnifying-glass"
+                  style="color: #d6d6d6"
+                ></i
+                ><a href="#" class="px-1 text-gray-400">Explore</a>
               </li>
               <li>
-                <i class="fa-solid fa-user"></i>
-                <a href="#" class="px-1">Profile</a>
+                <i class="fa-solid fa-user" style="color: #d6d6d6"></i>
+                <a href="#" class="px-1 text-gray-400">Profile</a>
               </li>
               <li>
-                <i class="fa-solid fa-address-card"></i
-                ><a href="#" class="px-1">About Socialsphere</a>
+                <i class="fa-solid fa-address-card" style="color: #d6d6d6"></i
+                ><a href="#" class="px-1 text-gray-400">About Socialsphere</a>
               </li>
             </ul>
             <a href="/index.html">
               <i class="fa-solid fa-right-from-bracket"></i>
-              <button class="py-4">Logout</button>
+              <button class="py-20 text-sm">Logout</button>
             </a>
           </div>
         </div>
 
-        <div class="bg-[#f3f3f3] p-4 rounded-lg flex-grow">
+        <div class="bg-[#f3f3f3] p-4 rounded-lg md:flex-grow">
           <div>
             <div class="flex items-center justify-between align-middle">
               <input
                 type="text"
                 placeholder="Search by title..."
-                class="bg-[#ffffff] rounded-full px-4 py-1 w-1/2"
+                class="bg-[#ffffff] rounded-full px-4 py-1 w-1/2 sm:px-2 md:py-0.5"
               />
               <div class="flex justify-end gap-4">
                 <i class="fa-solid fa-message"></i>
@@ -101,9 +124,7 @@
             </h1>
 
             <div class="flex justify-between align-middle">
-              <div
-                class="flex items-center justify-start gap-4 my-4 max-sm:flex-col max-sm:gap-2 max-sm:my-2"
-              >
+              <div class="flex items-center justify-start gap-4">
                 <select
                   class="bg-[#ffffff] font-[var(--font-body)] rounded-full px-4 py-1 border-none"
                 >
@@ -121,231 +142,318 @@
                 </select>
               </div>
               <div>
-                <a href="/create-post/index.html">
+                <a href="/create/index.html" class="hidden xs:block">
                   <button
                     class="my-4 bg-gradient-to-r from-[#DC359D] via-[#C87A6A] to-[#DBBA4B] rounded-full px-4 py-1 text-white font-semibold"
                   >
                     + Create a post
                   </button>
                 </a>
+                <a href="/create/index.html" class="block xs:hidden">
+                  <button
+                    class="my-4 bg-gradient-to-r from-[#DC359D] via-[#C87A6A] to-[#DBBA4B] rounded-full px-4 py-1 text-white font-semibold"
+                  >
+                    +
+                  </button>
+                </a>
               </div>
             </div>
             <div
-              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+              class="grid xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
             >
-              <div
-                class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden"
-              >
-                <div class="p-4 flex items-center space-x-3">
+              <div class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-2 flex items-center space-x-3">
                   <img
                     class="w-10 h-10 rounded-full object-cover"
-                    src="/images/photo-1518020382113-a7e8fc38eac9.avif"
+                    src="/images/follow1.avif"
                     alt="User Avatar"
                   />
                   <div>
-                    <p class="font-semibold">Jane Smith</p>
-                    <p class="text-sm text-gray-500">@jane_smith1</p>
+                    <p class="font-semibold">Jonah Doe</p>
                   </div>
                 </div>
-
                 <img
                   class="w-full h-auto object-cover px-1"
-                  src="/images/grid-image-1.jpg"
+                  src="/images/post.jpg"
                   alt="Post Image"
                 />
+                <div class="flex p-2 space-x-4">
+                  <button class="text-gray-500 hover:text-red-500">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <button class="text-gray-500 hover:text-blue-500">
+                    <i class="fa-solid fa-comment"></i>
+                  </button>
+                </div>
 
-                <div class="p-4">
+                <div class="p-2">
                   <p class="text-sm text-gray-700">
-                    Too cool for the dog park 😎🐾 #thisisacooldog
+                    <span class="font-semibold pr-1">jonahdoe1</span>Camping
+                    with my friends this weekend!
                   </p>
                 </div>
-
-                <div class="flex p-4 space-x-4">
-                  <button class="text-gray-500 hover:text-red-500">
-                    <i class="fas fa-heart"></i> Like
-                  </button>
-                  <button class="text-gray-500 hover:text-blue-500">
-                    <i class="fas fa-Comment"></i> Comment
-                  </button>
-                </div>
               </div>
-              <div
-                class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden"
-              >
-                <div class="p-4 flex items-center space-x-3">
+              <div class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-2 flex items-center space-x-3">
                   <img
                     class="w-10 h-10 rounded-full object-cover"
-                    src="/images/photo-1518020382113-a7e8fc38eac9.avif"
+                    src="/images/follow6.avif"
                     alt="User Avatar"
                   />
                   <div>
-                    <p class="font-semibold">Jane Smith</p>
-                    <p class="text-sm text-gray-500">@jane_smith1</p>
+                    <p class="font-semibold">Jimmy Young</p>
                   </div>
                 </div>
 
                 <img
                   class="w-full h-auto object-cover px-1"
-                  src="/images/grid-image-2.jpg"
+                  src="/images/post2.jpg"
                   alt="Post Image"
                 />
-
-                <div class="p-4">
+                <div class="flex p-2 space-x-4">
+                  <button class="text-gray-500 hover:text-red-500">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <button class="text-gray-500 hover:text-blue-500">
+                    <i class="fa-solid fa-comment"></i>
+                  </button>
+                </div>
+                <div class="p-2">
                   <p class="text-sm text-gray-700">
-                    Confidence level: Dog mode 🐕💪 #imtheboss
+                    <span class="font-semibold pr-1">jimmyjimmyyy</span>
+                    Collecting memories. #thisislife
                   </p>
                 </div>
-
-                <div class="flex p-4 space-x-4">
-                  <button class="text-gray-500 hover:text-red-500">
-                    <i class="fas fa-heart"></i> Like
-                  </button>
-                  <button class="text-gray-500 hover:text-blue-500">
-                    <i class="fas fa-Comment"></i> Comment
-                  </button>
-                </div>
               </div>
-              <div
-                class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden"
-              >
-                <div class="p-4 flex items-center space-x-3">
+              <div class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-2 flex items-center space-x-3">
                   <img
                     class="w-10 h-10 rounded-full object-cover"
-                    src="/images/photo-1518020382113-a7e8fc38eac9.avif"
+                    src="/images/follow4.avif"
                     alt="User Avatar"
                   />
                   <div>
-                    <p class="font-semibold">Jane Smith</p>
-                    <p class="text-sm text-gray-500">@jane_smith1</p>
+                    <p class="font-semibold">Lindsay Doe</p>
                   </div>
                 </div>
-
                 <img
                   class="w-full h-auto object-cover px-1"
-                  src="/images/grid-image-3.jpg"
+                  src="/images/post5.jpg"
                   alt="Post Image"
                 />
 
-                <div class="p-4">
-                  <p class="text-sm text-gray-700">What’s the fuss? 🐾👀</p>
-                </div>
-
-                <div class="flex p-4 space-x-4">
+                <div class="flex p-2 space-x-4">
                   <button class="text-gray-500 hover:text-red-500">
-                    <i class="fas fa-heart"></i> Like
+                    <i class="fas fa-heart"></i>
                   </button>
                   <button class="text-gray-500 hover:text-blue-500">
-                    <i class="fas fa-Comment"></i> Comment
+                    <i class="fa-solid fa-comment"></i>
                   </button>
                 </div>
-              </div>
-              <div
-                class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden"
-              >
-                <div class="p-4 flex items-center space-x-3">
-                  <img
-                    class="w-10 h-10 rounded-full object-cover"
-                    src="/images/photo-1518020382113-a7e8fc38eac9.avif"
-                    alt="User Avatar"
-                  />
-                  <div>
-                    <p class="font-semibold">Jane Smith</p>
-                    <p class="text-sm text-gray-500">@jane_smith1</p>
-                  </div>
-                </div>
 
-                <img
-                  class="w-full h-auto object-cover px-1"
-                  src="/images/grid-image-4.jpg"
-                  alt="Post Image"
-                />
-
-                <div class="p-4">
+                <div class="p-2">
                   <p class="text-sm text-gray-700">
-                    Just a little fluff ball stealing hearts 💕🐾
+                    <span class="font-semibold pr-1">itsme_lindsay</span>Todays
+                    activity. #somuchfun!
                   </p>
                 </div>
+              </div>
+              <div class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-2 flex items-center space-x-3">
+                  <img
+                    class="w-10 h-10 rounded-full object-cover"
+                    src="/images/follow2.avif"
+                    alt="User Avatar"
+                  />
+                  <div>
+                    <p class="font-semibold">Jack Bill</p>
+                  </div>
+                </div>
+                <img
+                  class="w-full h-auto object-cover px-1"
+                  src="/images/post4.jpg"
+                  alt="Post Image"
+                />
 
-                <div class="flex p-4 space-x-4">
+                <div class="flex p-2 space-x-4">
                   <button class="text-gray-500 hover:text-red-500">
-                    <i class="fas fa-heart"></i> Like
+                    <i class="fas fa-heart"></i>
                   </button>
                   <button class="text-gray-500 hover:text-blue-500">
-                    <i class="fas fa-Comment"></i> Comment
+                    <i class="fa-solid fa-comment"></i>
                   </button>
+                </div>
+
+                <div class="p-2">
+                  <p class="text-sm text-gray-700">
+                    <span class="font-semibold pr-1">jacktheone</span>
+                    Just me and the world. #incredible #view
+                  </p>
                 </div>
               </div>
 
-              <div
-                class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden"
-              >
-                <div class="p-4 flex items-center space-x-3">
+              <div class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-2 flex items-center space-x-3">
                   <img
                     class="w-10 h-10 rounded-full object-cover"
-                    src="/images/photo-1518020382113-a7e8fc38eac9.avif"
+                    src="/images/follow3.avif"
                     alt="User Avatar"
                   />
                   <div>
-                    <p class="font-semibold">Jane Smith</p>
-                    <p class="text-sm text-gray-500">@jane_smith1</p>
+                    <p class="font-semibold">Joey Da</p>
                   </div>
                 </div>
-
                 <img
                   class="w-full h-auto object-cover px-1"
-                  src="/images/grid-image-5.jpg"
+                  src="/images/post3.jpg"
                   alt="Post Image"
                 />
 
-                <div class="p-4">
-                  <p class="text-sm text-gray-700">
-                    Stay cozy, stay cute 🐾👕 #dogwithhoodie
-                  </p>
-                </div>
-
-                <div class="flex p-4 space-x-4">
+                <div class="flex p-2 space-x-4">
                   <button class="text-gray-500 hover:text-red-500">
-                    <i class="fas fa-heart"></i> Like
+                    <i class="fas fa-heart"></i>
                   </button>
                   <button class="text-gray-500 hover:text-blue-500">
-                    <i class="fas fa-Comment"></i> Comment
+                    <i class="fa-solid fa-comment"></i>
                   </button>
+                </div>
+
+                <div class="p-2">
+                  <p class="text-sm text-gray-700">
+                    <span class="font-semibold pr-1">joey_dadada</span>
+                    Hiking in the mountains. #nature #adventure #friends
+                  </p>
                 </div>
               </div>
-              <div
-                class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden"
-              >
-                <div class="p-4 flex items-center space-x-3">
+              <div class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-2 flex items-center space-x-3">
                   <img
                     class="w-10 h-10 rounded-full object-cover"
-                    src="/images/photo-1518020382113-a7e8fc38eac9.avif"
+                    src="/images/follow9.avif"
+                    alt="User Avatar"
+                  />
+                  <div>
+                    <p class="font-semibold">Jonas Div</p>
+                  </div>
+                </div>
+                <img
+                  class="w-full h-auto object-cover px-1"
+                  src="/images/post6.jpg"
+                  alt="Post Image"
+                />
+
+                <div class="flex p-2 space-x-4">
+                  <button class="text-gray-500 hover:text-red-500">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <button class="text-gray-500 hover:text-blue-500">
+                    <i class="fa-solid fa-comment"></i>
+                  </button>
+                </div>
+
+                <div class="p-2">
+                  <p class="text-sm text-gray-700">
+                    <span class="font-semibold pr-1">jonas_div</span>
+                    Roadtrip starts now! #adventure #roadtrip
+                  </p>
+                </div>
+              </div>
+              <div class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-2 flex items-center space-x-3">
+                  <img
+                    class="w-10 h-10 rounded-full object-cover"
+                    src="/images/follow5.avif"
+                    alt="User Avatar"
+                  />
+                  <div>
+                    <p class="font-semibold">Tail Wind</p>
+                  </div>
+                </div>
+                <img
+                  class="w-full h-auto object-cover px-1"
+                  src="/images/tail_wind.jpg"
+                  alt="Post Image"
+                />
+
+                <div class="flex p-2 space-x-4">
+                  <button class="text-gray-500 hover:text-red-500">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <button class="text-gray-500 hover:text-blue-500">
+                    <i class="fa-solid fa-comment"></i>
+                  </button>
+                </div>
+
+                <div class="p-2">
+                  <p class="text-sm text-gray-700">
+                    <span class="font-semibold pr-1">wind_tail</span>It's windy
+                    today! #windy #tail
+                  </p>
+                </div>
+              </div>
+              <div class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-2 flex items-center space-x-3">
+                  <img
+                    class="w-10 h-10 rounded-full object-cover"
+                    src="/images/follow7.avif"
                     alt="User Avatar"
                   />
                   <div>
                     <p class="font-semibold">Jane Smith</p>
-                    <p class="text-sm text-gray-500">@jane_smith1</p>
                   </div>
                 </div>
-
                 <img
                   class="w-full h-auto object-cover px-1"
-                  src="/images/grid-image-6.jpg"
+                  src="/images/grid-image-8.jpg"
                   alt="Post Image"
                 />
 
-                <div class="p-4">
-                  <p class="text-sm text-gray-700">
-                    Chillin' Like a boss 🐾 #boss
-                  </p>
-                </div>
-
-                <div class="flex p-4 space-x-4">
+                <div class="flex p-2 space-x-4">
                   <button class="text-gray-500 hover:text-red-500">
-                    <i class="fas fa-heart"></i> Like
+                    <i class="fas fa-heart"></i>
                   </button>
                   <button class="text-gray-500 hover:text-blue-500">
-                    <i class="fas fa-Comment"></i> Comment
+                    <i class="fa-solid fa-comment"></i>
                   </button>
+                </div>
+
+                <div class="p-2">
+                  <p class="text-sm text-gray-700">
+                    <span class="font-semibold pr-1">jane_smith1</span>Fries for
+                    days👀
+                  </p>
+                </div>
+              </div>
+              <div class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-2 flex items-center space-x-3">
+                  <img
+                    class="w-10 h-10 rounded-full object-cover"
+                    src="/images/follow7.avif"
+                    alt="User Avatar"
+                  />
+                  <div>
+                    <p class="font-semibold">Jane Smith</p>
+                  </div>
+                </div>
+                <img
+                  class="w-full h-auto object-cover px-1"
+                  src="/images/grid-image-9.jpg"
+                  alt="Post Image"
+                />
+
+                <div class="flex p-2 space-x-4">
+                  <button class="text-gray-500 hover:text-red-500">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <button class="text-gray-500 hover:text-blue-500">
+                    <i class="fa-solid fa-comment"></i>
+                  </button>
+                </div>
+
+                <div class="p-2">
+                  <p class="text-sm text-gray-700">
+                    <span class="font-semibold pr-1">jane_smith1</span>Too cute.
+                  </p>
                 </div>
               </div>
             </div>
